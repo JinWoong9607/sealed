@@ -1,3 +1,4 @@
 rootProject.name = 'sealed'
 
+include 'common-core'
 include 'sealed-service'
