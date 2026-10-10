@@ -35,3 +35,14 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### 비밀값 ###
+.env
+application-local.yaml
+*.pem
+*.key
+
+### 기타 ###
+*.log
+.DS_Store
+Thumbs.db
