@@ -1,0 +1,5 @@
+CREATE DATABASE sealed_db;
+CREATE DATABASE auth_db;
+CREATE DATABASE payment_db;
+CREATE DATABASE chat_db;
+CREATE DATABASE notify_db;
