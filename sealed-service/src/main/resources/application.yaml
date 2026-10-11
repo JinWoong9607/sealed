@@ -14,3 +14,6 @@ spring:
       port: 6379
   jpa:
     open-in-view: false
+  mvc:
+    problemdetails:
+      enabled: true
