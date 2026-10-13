@@ -9,7 +9,7 @@ import tools.jackson.databind.json.JsonMapper;
 public class OutboxWriter {
 
     private final EntityManager entityManager;
-    private JsonMapper jsonMapper;
+    private final JsonMapper jsonMapper;
     public OutboxWriter(EntityManager entityManager, JsonMapper jsonMapper) {
         this.entityManager = entityManager;
         this.jsonMapper = jsonMapper;
