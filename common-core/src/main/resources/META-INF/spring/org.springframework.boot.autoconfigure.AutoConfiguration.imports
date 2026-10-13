@@ -1,1 +1,2 @@
 com.roqhrcl.common.error.ErrorHandlingAutoConfiguration
+com.roqhrcl.common.outbox.OutboxAutoConfiguration
