@@ -9,4 +9,6 @@ dependencies {
     compileOnly 'org.hibernate.orm:hibernate-core'
     compileOnly 'org.springframework:spring-tx'
     compileOnly 'tools.jackson.core:jackson-databind'
+    compileOnly 'org.springframework.kafka:spring-kafka'
+    compileOnly 'org.slf4j:slf4j-api'
 }

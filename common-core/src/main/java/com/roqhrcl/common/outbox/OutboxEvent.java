@@ -42,6 +42,17 @@ public class OutboxEvent {
 
     protected OutboxEvent() {}
 
+    public void markPublished(Instant publishedAt) {
+        this.attempts++;
+        this.publishedAt = publishedAt;
+        this.lastError = null;
+    }
+
+    public void markFailed(String error) {
+        this.attempts++;
+        this.lastError = error;
+    }
+
     public OutboxEvent(UUID eventId, String aggregateId, String eventType,
                        String topic, String payload, Instant occurredAt) {
         this.eventId = eventId;
