@@ -16,7 +16,7 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-@SpringBootTest
+@SpringBootTest(properties = "outbox.relay.enabled=false")
 @Import(TestcontainersConfiguration.class)
 public class OutboxWriterTest {
 
