@@ -1,2 +1,3 @@
 com.roqhrcl.common.error.ErrorHandlingAutoConfiguration
 com.roqhrcl.common.outbox.OutboxAutoConfiguration
+com.roqhrcl.common.idempotency.IdempotencyAutoConfiguration
