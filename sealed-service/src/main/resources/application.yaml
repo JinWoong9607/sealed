@@ -21,3 +21,5 @@ spring:
     producer:
       properties:
         max.block.ms: 5000
+    consumer:
+      auto-offset-reset: earliest
