@@ -16,6 +16,7 @@ import tools.jackson.databind.json.JsonMapper;
 
 @AutoConfiguration
 @ConditionalOnClass(name = "jakarta.persistence.EntityManager")
+@ConditionalOnBooleanProperty(name = "outbox.enabled")
 @AutoConfigurationPackage(basePackageClasses = OutboxEvent.class)
 public class OutboxAutoConfiguration {
 
