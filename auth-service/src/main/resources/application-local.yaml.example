@@ -1,2 +1,5 @@
 DB_USERNAME: sealed
 DB_PASSWORD: change-me
+
+JWT_PRIVATE_KEY: file:C:/path/to/jwt-private.pem
+JWT_PUBLIC_KEY: file:C:/path/to/jwt-public.pem
