@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.UUID;
 
 @Component
 public class TokenIssuer {
@@ -29,6 +30,7 @@ public class TokenIssuer {
                 .subject(String.valueOf(userId))
                 .issuedAt(now)
                 .expiresAt(now.plus(ACCESS_TOKEN_TTL))
+                .id(UUID.randomUUID().toString())
                 .build();
         JwsHeader header = JwsHeader.with(SignatureAlgorithm.RS256).build();
         return jwtEncoder.encode(JwtEncoderParameters.from(header, claims)).getTokenValue();
